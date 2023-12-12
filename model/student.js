@@ -13,7 +13,10 @@ const studentschema =new mongoose.Schema(
         Addmno:Number,
         name:String,
         Age:Number,
-        Course:String
+        Course:String,
+        image1:{data:Buffer,
+        contentType:String
+    }
     }
 )
 var studentmodel =mongoose.model("student",studentschema)
